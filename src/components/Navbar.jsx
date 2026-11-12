@@ -26,7 +26,7 @@ export default function Navbar() {
     <header className={`fixed top-0 inset-x-0 z-50 transition-all ${scrolled ? "bg-navy/95 backdrop-blur-xl shadow-xl py-2" : "bg-navy py-4"}`}>
       <div className="max-w-[1200px] mx-auto px-5 flex items-center justify-between">
         <a href="#" className="flex items-center gap-2.5 text-white font-black text-[24px]">
-          <span className="w-11 h-11 rounded-xl bg-gradient-to-br from-gold-2 to-gold grid place-items-center text-navy animate-spin-slow shadow-lg shadow-yellow-500/40">
+          <span className="w-11 h-11 rounded-xl bg-gold-gradient grid place-items-center text-navy animate-spin-slow shadow-lg shadow-yellow-500/40">
             <Code2 />
           </span>
           <span>
