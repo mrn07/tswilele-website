@@ -23,15 +23,15 @@ export default function Navbar() {
   ];
 
   return (
-    <header className={`fixed top-0 inset-x-0 z-50 transition-all ${scrolled ? "bg-[#071A33]/95 backdrop-blur-xl shadow-xl py-2" : "bg-[#071A33] py-4"}`}>
+    <header className={`fixed top-0 inset-x-0 z-50 transition-all ${scrolled ? "bg-navy/95 backdrop-blur-xl shadow-xl py-2" : "bg-navy py-4"}`}>
       <div className="max-w-[1200px] mx-auto px-5 flex items-center justify-between">
         <a href="#" className="flex items-center gap-2.5 text-white font-black text-[24px]">
-          <span className="w-11 h-11 rounded-xl bg-gradient-to-br from-[#FFD97A] to-[#E9B64A] grid place-items-center text-[#071A33] animate-spin-slow shadow-lg shadow-yellow-500/40">
+          <span className="w-11 h-11 rounded-xl bg-gradient-to-br from-gold-2 to-gold grid place-items-center text-navy animate-spin-slow shadow-lg shadow-yellow-500/40">
             <Code2 />
           </span>
           <span>
             TSWILELE
-            <small className="block text-[9px] tracking-[2.5px] text-[#FFD97A] font-bold">
+            <small className="block text-[9px] tracking-[2.5px] text-gold-2 font-bold">
               LEARN • BUILD • GROW
             </small>
           </span>
@@ -42,14 +42,14 @@ export default function Navbar() {
             <a
               key={l.label}
               href={l.href}
-              className="text-[#DDE6F2] font-semibold text-[14.5px] hover:text-white relative after:absolute after:left-0 after:-bottom-1.5 after:h-[3px] after:bg-[#E9B64A] after:w-0 hover:after:w-full after:transition-all"
+              className="text-light-blue font-semibold text-[14.5px] hover:text-white relative after:absolute after:left-0 after:-bottom-1.5 after:h-[3px] after:bg-gold after:w-0 hover:after:w-full after:transition-all"
             >
               {l.label}
             </a>
           ))}
           <a
             href={waLink()}
-            className="bg-white text-[#071A33] px-5 py-2.5 rounded-full font-extrabold text-sm hover:scale-105 transition flex items-center gap-2"
+            className="bg-white text-navy px-5 py-2.5 rounded-full font-extrabold text-sm hover:scale-105 transition flex items-center gap-2"
           >
             <MessageCircle size={16} /> WhatsApp Us →
           </a>
@@ -66,7 +66,7 @@ export default function Navbar() {
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
-            className="lg:hidden mx-4 mt-3 bg-[#071A33] rounded-2xl p-5 flex flex-col gap-4 shadow-2xl border border-white/10"
+            className="lg:hidden mx-4 mt-3 bg-navy rounded-2xl p-5 flex flex-col gap-4 shadow-2xl border border-white/10"
           >
             {links.map((l) => (
               <a
@@ -80,7 +80,7 @@ export default function Navbar() {
             ))}
             <a
               href={waLink()}
-              className="bg-white text-[#071A33] px-4 py-3 rounded-full font-bold text-center"
+              className="bg-white text-navy px-4 py-3 rounded-full font-bold text-center"
             >
               WhatsApp Us →
             </a>
