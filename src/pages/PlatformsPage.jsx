@@ -55,7 +55,7 @@ export default function PlatformsPage() {
               <motion.div 
                 animate={{ rotate: 360 }}
                 transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-                className="text-5xl mb-4 text-[#E9B64A]"
+                className="text-5xl mb-4 text-gold"
               >
                 {platform.icon}
               </motion.div>
