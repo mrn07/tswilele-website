@@ -55,10 +55,10 @@ export default function Hero() {
             <div className="absolute -left-4 bottom-[90px] z-10 bg-white text-navy rounded-2xl p-3 flex gap-3 items-center shadow-2xl animate-float2"><span className="w-10 h-10 rounded-xl bg-teal grid place-items-center text-white"><FileText size={18}/></span><div><b className="text-[13px] block">CV Created!</b><span className="text-[11px] text-slate-500">Ready to download</span></div></div>
             <div className="absolute -right-2 top-8 z-10 bg-white text-navy rounded-2xl p-3 flex gap-3 items-center shadow-2xl animate-float2"><span className="w-10 h-10 rounded-xl bg-gold grid place-items-center"><Check size={18}/></span><div><b className="text-[13px] block">Website Published</b><span className="text-[11px] text-slate-500">tswilele.co.zw is live</span></div></div>
             <div className="rounded-[20px] overflow-hidden bg-white text-slate-800 shadow-[0_30px_60px_rgba(0,0,0,.4)] animate-float">
-              <div className="bg-grey-blue px-3.5 py-3 flex gap-1.5 items-center"><span className="w-2.5 h-2.5 rounded-full bg-coral-red"/><span className="w-2.5 h-2.5 rounded-full bg-[#FEBC2E]"/><span className="w-2.5 h-2.5 rounded-full bg-[#28C840]"/><span className="flex-1 bg-white border border-slate-200 rounded-full px-3 py-1 text-[12px] text-slate-500 ml-2">🔒 https://tswilele.co.zw</span></div>
+              <div className="bg-grey-blue px-3.5 py-3 flex gap-1.5 items-center"><span className="w-2.5 h-2.5 rounded-full bg-coral-red"/><span className="w-2.5 h-2.5 rounded-full bg-yellow"/><span className="w-2.5 h-2.5 rounded-full bg-green"/><span className="flex-1 bg-white border border-slate-200 rounded-full px-3 py-1 text-[12px] text-slate-500 ml-2">🔒 https://tswilele.co.zw</span></div>
               <div className="p-5">
                 <span className="bg-yellow-cream text-orange text-xs font-bold px-3 py-1.5 rounded-full">✨ NEW: Learning Platform Live</span>
-                <h3 className="text-[22px] font-bold text-[#071A33] mt-3">Grow Your Business<br/>Online With Us</h3>
+                <h3 className="text-[22px] font-bold text-navy mt-3">Grow Your Business<br/>Online With Us</h3>
                 <p className="text-[13px] text-slate-500 my-2">Modern, mobile-friendly websites that bring customers to you — even while you sleep.</p>
                 <div className="grid grid-cols-3 gap-2.5">
                   <div className="rounded-xl p-3.5 text-white bg-linear-to-br from-navy-dark to-blue"><GraduationCap/><b className="text-[13px] block mt-1">Learning</b><span className="text-[11px] opacity-90">Study anywhere</span></div>
@@ -71,7 +71,7 @@ export default function Hero() {
           </motion.div>
         </div>
         <div className="mt-10 overflow-hidden whitespace-nowrap border-t border-white/15 pt-4 [mask-image:linear-gradient(90deg,transparent,#000_10%,#000_90%,transparent)]">
-          <div className="inline-flex gap-9 animate-marquee font-bold tracking-wide text-[#D9E2EE] text-sm">{[...marqueeItems, ...marqueeItems].map((t,i)=><span key={i} className="flex gap-9"><span>{t}</span><span className="text-[#FFD97A]">•</span></span>)}</div>
+          <div className="inline-flex gap-9 animate-marquee font-bold tracking-wide text-gr-blue text-sm">{[...marqueeItems, ...marqueeItems].map((t,i)=><span key={i} className="flex gap-9"><span>{t}</span><span className="text-gold-2">•</span></span>)}</div>
         </div>
       </div>
     </section>
