@@ -31,7 +31,7 @@ function Counter({ target, suffix = "" }) {
 export default function Hero() {
   const typing = useTyping();
   return (
-    <section className="bg-[radial-gradient(900px_500px_at_85%_10%,rgba(233,182,74,.28),transparent_60%),radial-gradient(700px_400px_at_10%_90%,rgba(0,140,255,.25),transparent_60%),linear-gradient(135deg,#071A33_0%,#0B2C4A_55%,#0A1F3F_100%)] text-white pt-[150px] pb-[60px] overflow-hidden">
+    <section className="bg-[radial-gradient(900px_500px_at_85%_10%,rgba(233,182,74,.28),transparent_60%),radial-gradient(700px_400px_at_10%_90%,rgba(0,140,255,.25),transparent_60%),linear-gradient(135deg,#071A33_0%,#0B2C4A_55%,#0A1F3F_100%)] text-white pt-[100px] pb-[60px] overflow-hidden">
       <div className="max-w-[1200px] mx-auto px-5">
         <div className="grid lg:grid-cols-[1.05fr_.95fr] gap-10 items-center">
           <motion.div initial={{opacity:0, y:30}} animate={{opacity:1, y:0}} transition={{duration:.7}}>
