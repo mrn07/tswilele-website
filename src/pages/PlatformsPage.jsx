@@ -5,7 +5,7 @@ import { ArrowRight, Check, Star } from "lucide-react";
 
 export default function PlatformsPage() {
   return (
-    <div className="min-h-screen bg-white text-[#071A33]">
+    <div className="min-h-screen bg-white text-navy">
       {/* Hero */}
       <motion.section 
         initial={{ opacity: 0 }}
@@ -60,7 +60,7 @@ export default function PlatformsPage() {
                 {platform.icon}
               </motion.div>
               <h2 className="text-2xl font-bold mb-3">{platform.title}</h2>
-              <p className="text-[#071A33]/80 mb-6">{platform.desc}</p>
+              <p className="text-navy/80 mb-6">{platform.desc}</p>
               
               <div className="mb-6">
                 {platform.points.map((point, j) => (
@@ -71,8 +71,8 @@ export default function PlatformsPage() {
                     transition={{ delay: 0.4 + i * 0.1 + j * 0.05 }}
                     className="flex items-center gap-2 mb-2"
                   >
-                    <Check size={16} className="text-[#E9B64A]" />
-                    <span className="text-sm text-[#071A33]/80">{point}</span>
+                    <Check size={16} className="text-gold" />
+                    <span className="text-sm text-navy/80">{point}</span>
                   </motion.div>
                 ))}
               </div>
@@ -83,7 +83,7 @@ export default function PlatformsPage() {
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.05 }} 
                 whileTap={{ scale: 0.95 }} 
-                className="inline-flex items-center gap-2 bg-[#071A33] text-white px-6 py-3 rounded-lg hover:bg-[#E9B64A] hover:text-[#071A33] transition"
+                className="inline-flex items-center gap-2 bg-navy text-white px-6 py-3 rounded-lg hover:bg-gold hover:text-navy transition"
               >
                 {platform.cta} <ArrowRight size={16} />
               </motion.a>
@@ -97,7 +97,7 @@ export default function PlatformsPage() {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.8 }}
-        className="bg-[#071A33] text-white py-20"
+        className="bg-navy text-white py-20"
       >
         <div className="max-w-6xl mx-auto px-6">
           <h2 className="text-3xl font-bold text-center mb-12">What Users Say</h2>
@@ -158,7 +158,7 @@ function LoopTyping({ phrases, speed = 50 }) {
   }, [text, isDeleting, phraseIndex, phrases, speed]);
 
   return (
-    <span className="inline-block border-r-2 border-[#E9B64A] animate-pulse">
+    <span className="inline-block border-r-2 border-gold animate-pulse">
       {text}
     </span>
   );

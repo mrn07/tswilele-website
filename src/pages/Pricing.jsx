@@ -9,17 +9,17 @@ export default function Pricing() {
   return (
     <section id="pricing" className="py-[90px]">
       <div className="max-w-[1200px] mx-auto px-5 text-center">
-        <p className="text-[#E9B64A] font-extrabold tracking-[2px] uppercase text-xs">Affordable Packages</p>
-        <h2 className="text-[clamp(30px,4.5vw,48px)] font-extrabold text-[#071A33] mt-3">
-          Pricing That <span className="text-[#E9B64A]">Makes Sense.</span>
+        <p className="text-gold font-extrabold tracking-[2px] uppercase text-xs">Affordable Packages</p>
+        <h2 className="text-[clamp(30px,4.5vw,48px)] font-extrabold text-navy mt-3">
+          Pricing That <span className="text-gold">Makes Sense.</span>
         </h2>
 
         {/* Toggle */}
         <div className="flex justify-center gap-4 mt-6">
-          <span className={`text-sm ${!isAnnual ? "font-bold text-[#071A33]" : "text-slate-500"}`}>Monthly</span>
+          <span className={`text-sm ${!isAnnual ? "font-bold text-navy" : "text-slate-500"}`}>Monthly</span>
           <motion.button
             onClick={() => setIsAnnual(!isAnnual)}
-            className="relative inline-flex h-6 w-11 items-center rounded-full bg-[#071A33]"
+            className="relative inline-flex h-6 w-11 items-center rounded-full bg-navy"
             whileTap={{ scale: 0.95 }}
           >
             <motion.span
@@ -28,8 +28,8 @@ export default function Pricing() {
               transition={{ type: "spring", stiffness: 700, damping: 30 }}
             />
           </motion.button>
-          <span className={`text-sm ${isAnnual ? "font-bold text-[#071A33]" : "text-slate-500"}`}>
-            Annual <span className="text-[#E9B64A]">(Save 20%)</span>
+          <span className={`text-sm ${isAnnual ? "font-bold text-navy" : "text-slate-500"}`}>
+            Annual <span className="text-gold">(Save 20%)</span>
           </span>
         </div>
 
@@ -43,17 +43,17 @@ export default function Pricing() {
               whileHover={{ y: -6 }}
               className={`rounded-[24px] p-7 relative ${
                 p.popular
-                  ? "bg-[#071A33] text-white scale-[1.03] shadow-2xl"
+                  ? "bg-navy text-white scale-[1.03] shadow-2xl"
                   : "bg-white border-2 border-slate-200"
               }`}
             >
               {p.popular && (
-                <span className="absolute -top-3 right-5 bg-[#E9B64A] text-[#071A33] text-xs font-black px-3 py-1.5 rounded-full">
+                <span className="absolute -top-3 right-5 bg-gold text-navy text-xs font-black px-3 py-1.5 rounded-full">
                   MOST POPULAR
                 </span>
               )}
               <h4 className="text-lg font-bold">{p.name}</h4>
-              <p className={`text-[13px] ${p.popular ? "text-[#C3CFDD]" : "text-slate-500"}`}>
+              <p className={`text-[13px] ${p.popular ? "text-mut-grey" : "text-slate-500"}`}>
                 {p.desc}
               </p>
               <motion.div
@@ -76,7 +76,7 @@ export default function Pricing() {
                     transition={{ delay: j * 0.05 }}
                     className="flex gap-2.5 py-2 text-sm"
                   >
-                    <Check size={16} className={p.popular ? "text-[#E9B64A]" : "text-emerald-500"} /> {f}
+                    <Check size={16} className={p.popular ? "text-gold" : "text-emerald-500"} /> {f}
                   </motion.li>
                 ))}
               </ul>
@@ -84,8 +84,8 @@ export default function Pricing() {
                 href={waLink(`I want ${p.name}`)}
                 className={`block text-center py-3.5 rounded-full font-bold ${
                   p.popular
-                    ? "bg-gradient-to-br from-[#FFD97A] to-[#E9B64A] text-[#071A33]"
-                    : "bg-[#071A33] text-white"
+                    ? "bg-linear-to-br from-gold-2 to-gold text-navy"
+                    : "bg-navy text-white"
                 }`}
               >
                 {p.cta}
@@ -126,7 +126,7 @@ export default function Pricing() {
                       whileHover={{ scale: 1.1 }}
                     >
                       {p.features.includes(feature) ? (
-                        <Check size={16} className="inline text-[#E9B64A]" />
+                        <Check size={16} className="inline text-gold" />
                       ) : (
                         "—"
                       )}

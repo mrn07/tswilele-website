@@ -42,7 +42,7 @@ export function Featured() {
               <div key={f.t} className="flex gap-3.5 bg-white/10 border border-white/10 p-3.5 rounded-2xl hover:translate-x-2 transition"><span className="w-11 h-11 shrink-0 rounded-xl bg-gold text-navy grid place-items-center">{f.icon}</span><div><b className="block text-[15px]">{f.t}</b><span className="text-[13px] text-steel-blue">{f.d}</span></div></div>
             ))}
           </div>
-          <a href="https://tswilele.co.zw" className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full font-bold bg-linear-to-br from-gold-2 to-gold text-navy">Join Learning Platform <ArrowRight size={18}/></a>
+          <a href="https://learn.tswilele.co.zw" target="_blank"  rel="noopener noreferrer" className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full font-bold bg-linear-to-br from-gold-2 to-gold text-navy">Join Learning Platform <ArrowRight size={18}/></a>
         </motion.div>
         <motion.div {...fadeUp} transition={{delay:.15}} className="rounded-[20px] overflow-hidden bg-white text-slate-800 shadow-2xl animate-float">
           <div className="bg-navy text-white px-4 py-3.5 flex justify-between"><span>📚 Tswilele Learning Dashboard</span><span>● ● ●</span></div>
