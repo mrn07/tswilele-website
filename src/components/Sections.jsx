@@ -42,7 +42,7 @@ export function Featured() {
               <div key={f.t} className="flex gap-3.5 bg-white/10 border border-white/10 p-3.5 rounded-2xl hover:translate-x-2 transition"><span className="w-11 h-11 shrink-0 rounded-xl bg-gold text-navy grid place-items-center">{f.icon}</span><div><b className="block text-[15px]">{f.t}</b><span className="text-[13px] text-steel-blue">{f.d}</span></div></div>
             ))}
           </div>
-          <a href={waLink("Hi! I want to join Tswilele Learning")} className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full font-bold bg-linear-to-br from-gold-2 to-gold text-navy">Join Learning Platform <ArrowRight size={18}/></a>
+          <a href="https://tswilele.co.zw" className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full font-bold bg-linear-to-br from-gold-2 to-gold text-navy">Join Learning Platform <ArrowRight size={18}/></a>
         </motion.div>
         <motion.div {...fadeUp} transition={{delay:.15}} className="rounded-[20px] overflow-hidden bg-white text-slate-800 shadow-2xl animate-float">
           <div className="bg-navy text-white px-4 py-3.5 flex justify-between"><span>📚 Tswilele Learning Dashboard</span><span>● ● ●</span></div>
@@ -59,7 +59,7 @@ export function Featured() {
 
 export function Services() {
   return (
-    <section id="services" className="py-[90px] bg-[#F8FAFD]">
+    <section id="services" className="py-[90px] bg-blue-wite">
       <div className="max-w-[1200px] mx-auto px-5">
         <p className="text-dark-gold font-extrabold tracking-[2px] uppercase text-xs">What Else We Do</p>
         <h2 className="text-[clamp(30px,4.5vw,48px)] font-extrabold text-navy mt-3">We Build <span className="gold-text">Everything Online.</span></h2>

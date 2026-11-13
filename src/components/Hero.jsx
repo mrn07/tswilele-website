@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { Zap, ArrowRight, Check, FileText, GraduationCap, PenLine, IdCard } from "lucide-react";
 
-const words = ["We Design. We Develop.", "Learning Platform 📚", "Question Paper Generator ✍️", "CV Generator That Gets You Hired 💼", "Websites That Sell 🚀", "Domain + Hosting, All In One 🌐"];
+const words = ["We Design. We Develop.","Modern Websites","Digital Solutions","Smart Systems","Amazing Designs","Future Technology","Creative Experience" ,"Learning Platform 📚", "Question Paper Generator ✍️", "CV Generator That Gets You Hired 💼", "Websites That Sell 🚀", "Domain + Hosting, All In One 🌐"];
 const marqueeItems = ["LEARNING PLATFORM", "CV GENERATOR", "QUESTION PAPER GENERATOR", "BUSINESS WEBSITES", "E-COMMERCE", "DOMAIN REGISTRATION", "HOSTING", "WEB APPLICATIONS"];
 
 function useTyping() {
