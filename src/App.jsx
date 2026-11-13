@@ -14,16 +14,16 @@ import ServicesPage from "./pages/ServicesPage";
 export default function App() {
   return (
     <BrowserRouter>
-      <div className="min-h-screen bg-white font-[Inter] pt-[80px]">
+      <div className="min-h-screen bg-white font-[Inter] pt-[5px]">
         <Navbar />
         <Routes>
           <Route path="/" element={
             <>
               <Hero />
               {/* Trust bar */}
-              <div className="bg-[#F6F8FB] border-b border-slate-200 py-7">
+              <div className="bg-off-white border-b border-slate-200 py-7">
                 <div className="max-w-[1200px] mx-auto px-5 flex justify-between flex-wrap gap-5 text-slate-500 font-semibold text-sm">
-                  <span>⭐ <b className="text-[#071A33] text-base">4.9 / 5</b> from clients</span>
+                  <span>⭐ <b className="text-navy text-base">4.9 / 5</b> from clients</span>
                   <span>🏫 Schools & Businesses Trust Us</span>
                   <span>📱 100% Mobile Friendly</span>
                   <span>⚡ Fast Loading</span>
