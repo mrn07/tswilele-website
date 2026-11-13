@@ -10,7 +10,16 @@
   --font-display: "Poppins", sans-serif;
   --font-body: "Inter", sans-serif;
   --color-light-blue: #DDE6F2;
+  --color-navy-dark: #0B2C4A;
+  --color-blue: #2A5A9A;
+  --color-orange: #FF8A00;
+  --color-teal: #00C2A8;
+  --color-sky: #0088CC;
+  --color-grey-blue: #EAF0F7;
+  --color-coral-red: #FF5F57;
+  --color-yellow-cream: #FFF3D0 ;
 }
+
 
 html {
   scroll-behavior: smooth;
