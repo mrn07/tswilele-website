@@ -35,7 +35,7 @@ export const services = [
 ];
 
 export const pricing = [
-  { name: "Starter", price: "$45", desc: "For small business & personal brand", features: ["1-3 Page Website", "Mobile Friendly", "WhatsApp Button", "Contact Form", "Free Domain Advice"], popular: false, cta: "Choose Starter" },
+  { name: "Starter", price: "$50", desc: "For small business & personal brand", features: ["1-3 Page Website", "Mobile Friendly", "WhatsApp Button", "Contact Form", "Free Domain Advice"], popular: false, cta: "Choose Starter" },
   { name: "Business Pro", price: "$120", desc: "For growing businesses & schools", features: ["Up to 8 Pages", "Domain + 1 Year Hosting", "Admin Panel / CMS", "SEO Setup", "1 Month Free Support"], popular: true, cta: "Choose Business Pro" },
   { name: "E-Commerce / Custom App", price: "$250", desc: "For online stores & systems", features: ["Online Store / System", "Payments Integration", "Product Management", "Domain + Hosting", "Training + Support"], popular: false, cta: "Get Custom Quote" },
 ];
